@@ -2,12 +2,13 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { BsBell } from 'react-icons/bs'; // Import the BsBell component from react-icons/bs
+import { FaEnvelope } from 'react-icons/fa'; // Import the FaEnvelope component from react-icons/fa
 
 function Header() {
   return (
@@ -24,21 +25,20 @@ function Header() {
             </Form>
           </Col>
         </Row>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav className="ml-auto">
-            <Nav.Link href="#login" className="ps-3">Invite Friends</Nav.Link>
-            <Nav.Link href="#login" className="ps-3 ms-3 loginbutton">Login</Nav.Link>
-            <Nav.Link href="#signup" className="ps-3">Sign Up</Nav.Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav ms-auto" />
+        <Navbar.Collapse id="basic-navbar-nav ms-auto">
+          <Nav className="ml-auto ms-auto">
+            <Nav.Link href="#Invite_Friends" className="ps-3 ms-3 me-3 Invitebutton bg-success text-light pe-3 ps-3">Invite Friends</Nav.Link>
+            <Nav.Link href="#login" className="ps-3 ms-3 me-3 loginbutton bg-success text-light pe-3 ps-3">Login</Nav.Link>
+            <Nav.Link href="#signup" className="ps-3 pe-3 me-5 signupbutton bg-success text-light">Sign Up</Nav.Link>
+
+            <Button variant="outline-primary" size="sm" className="me-5">
+              <FaEnvelope className="message-icon" />
+            </Button>
+
+            <Button variant="outline-primary" size="sm">
+              <BsBell className="bell-icon" />
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
