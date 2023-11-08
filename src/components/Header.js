@@ -16,7 +16,7 @@ function Header() {
       <Container>
         <Row className="align-items-center">
           <Col>
-            <Navbar.Brand href="#home" className='logo'>SafeConvo</Navbar.Brand>
+            <Navbar.Brand href="#home" className='logo text-light'>SafeConvo</Navbar.Brand>
           </Col>
           <Col className="d-flex">
             <Form className="d-flex">
@@ -32,11 +32,11 @@ function Header() {
             <Nav.Link href="#login" className="ps-3 ms-3 me-3 loginbutton bg-success text-light pe-3 ps-3">Login</Nav.Link>
             <Nav.Link href="#signup" className="ps-3 pe-3 me-5 signupbutton bg-success text-light">Sign Up</Nav.Link>
 
-            <Button variant="outline-primary" size="sm" className="me-5">
+            <Button variant="outline-primary" size="sm" className="me-3 custom-button">
               <FaEnvelope className="message-icon" />
             </Button>
 
-            <Button variant="outline-primary" size="sm">
+            <Button variant="outline-primary" size="sm" className="custom-button">
               <BsBell className="bell-icon" />
             </Button>
           </Nav>

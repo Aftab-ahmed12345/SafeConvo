@@ -62,22 +62,20 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
-
-
-
-
-
-
-
 .Searchbar
 {
     padding-left: 15rem;
     width: 15rem;
     box-sizing: border-box;
 }
-.message-icon {
+.message-icon 
+{
     color: #007bff; 
     font-size: 20px; 
-  }
-  
+}
+.bell-icon
+{
+    color: #007bff; 
+    font-size: 20px; 
+    
+}
