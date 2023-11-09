@@ -96,3 +96,12 @@
     top: 10px; 
     right: 10px;
 }
+.body-vertical-line 
+{
+    border-left: 2px solid #ccc; 
+    padding-left: 15px; 
+    height: 40rem;
+    position:absolute;
+    left: 300px;
+}
+

@@ -11,7 +11,7 @@ function HeroSection() {
         <Row>
           <Col className='col-12 col-lg-6 message-width'>
             <div className="left-side">
-              <span>Message</span>
+              <span>Messages</span>
               <span className="message-counter"> 5</span>
             </div>
           </Col>     
