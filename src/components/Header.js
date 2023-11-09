@@ -7,8 +7,8 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { BsBell } from 'react-icons/bs'; // Import the BsBell component from react-icons/bs
-import { FaEnvelope } from 'react-icons/fa'; // Import the FaEnvelope component from react-icons/fa
+import { BsBell } from 'react-icons/bs'; 
+import { FaEnvelope } from 'react-icons/fa'; 
 
 function Header() {
   return (
